@@ -22,6 +22,10 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+}
+
 /* HEADER */
 header {
     padding: 60px 4%;
@@ -77,4 +81,138 @@ header .btn-contato button:hover {
 
 header .logo {
 margin-top: -32px;
+}
+
+/* HERO */
+section.hero-section {
+    padding: 30px 2%;
+}
+
+section.hero-section .flex {
+    align-items: center;
+    justify-content: center; 
+    gap: 90px;   
+}
+
+.hero-section h1 {
+    color: var(--color-black);
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.hero-section .txt-hero h1 span {
+    color: var(--color-primary);
+}
+
+.hero-section .txt-hero p {
+    color: var(--color-black);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 40px 0;
+}
+
+.hero-section .btn-contato button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;     
+    border-radius: 64px;
+    padding: 10px 40px;  
+    cursor: pointer;
+}
+
+.hero-section .btn-contato button:hover {
+    color: var(--color-primary);
+    transform: scale(1.05);
+    transition: .2s;  
+}
+
+/* CARDS */
+section.cards-section {
+    padding: 70px 4%;
+}
+
+section.cards-section .flex {
+    gap: 40px;
+    justify-content: center;
+}
+
+.cards-section .cards {
+    color: var(--color-black);
+    padding: 40px;
+    border-radius: 40px;
+    border: 2px solid var(--color-black);
+    background: #EEEEEE;
+    box-shadow: 7px 7px 0px 0px #000;
+    max-width: 290px;
+}
+
+.cards-section .cards:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.cards-section .cards h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cards-section .cards p {
+    font-size: 18px;
+}
+
+.cards:nth-child(2n) {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.cards-section .cards a {
+    display: block;
+    margin: -10px 0 -30px 160px;
+}
+
+/* CASES */
+section.cases {
+    padding: 70px 4%;
+}
+
+section.cases .flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cases h2 {
+    color: #000;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.cases h2 span {
+    color: var(--color-primary);
+}
+
+.cases .btn-contato button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;     
+    border-radius: 64px;
+    padding: 10px 40px;  
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.cases .btn-contato button:hover {
+    color: var(--color-primary);
+    transform: scale(1.05);
+    transition: .2s;  
 }
